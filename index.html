@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predstavljanje Poslodavcu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SVEUČILIŠTE J.J. STROSSMAYERA U OSIJEKU</h1>
+        <h2>Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek</h2>
+        <h3>Kolegij: Multimedijska tehnika</h3>
+        <h4>Zadatak: Predstavljanje poslodavcu</h4>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="student1.html" target="_blank">Student 1</a></li>
+            <li><a href="student2.html" target="_blank">Student 2</a></li>
+            <li><a href="https://www.unios.hr/" target="_blank">Web fakulteta</a></li>
+            <li><a href="https://www.unios.hr/studiji/kolegiji/multimedijska-tehnika" target="_blank">Kolegij Multimedijska tehnika</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="students">
+            <div class="student-card">
+                <h3>Student 1: Ivan Horvat</h3>
+                <img src="images/ivan_small.jpg" alt="Ivan Horvat" onclick="openImage('images/ivan_large.jpg')">
+                <p>Datum rođenja: <a href="https://hr.wikipedia.org/wiki/1998" target="_blank">01.01.1998</a></p>
+                <p>Mjesto rođenja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></p>
+                <p>Mjesto stanovanja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></p>
+                <p>Spol: Muški</p>
+                <p>Hobi: <a href="https://hr.wikipedia.org/wiki/Planinarenje" target="_blank">Planinarenje</a></p>
+
+                <h4>Obrazovanje:</h4>
+                <ul>
+                    <li><a href="https://hr.wikipedia.org/wiki/Osnovna_škola" target="_blank">Osnovna škola</a></li>
+                    <li><a href="https://hr.wikipedia.org/wiki/Srednja_škola" target="_blank">Srednja škola</a></li>
+                    <li><a href="https://www.unios.hr/" target="_blank">Fakultet</a></li>
+                </ul>
+
+                <h4>Radno iskustvo:</h4>
+                <ul>
+                    <li>Praksa u IT firmi XYZ</li>
+                </ul>
+
+                <h4>Vještine:</h4>
+                <ul>
+                    <li>Programiranje: Java, C#, Python</li>
+                    <li>Multimedija: Photoshop, Premiere Pro</li>
+                    <li>Ostalo: timski rad, prezentacijske vještine</li>
+                </ul>
+
+                <h4>Multimedija:</h4>
+                <audio controls>
+                    <source src="audio/ivan_intro.mp3" type="audio/mpeg">
+                    Vaš preglednik ne podržava audio element.
+                </audio>
+                <video width="320" height="240" controls>
+                    <source src="video/ivan_video.mp4" type="video/mp4">
+                    Vaš preglednik ne podržava video element.
+                </video>
+
+                <h4>Galerija:</h4>
+                <div class="gallery">
+                    <img src="images/photo1_small.jpg" alt="Foto1" onclick="openImage('images/photo1_large.jpg')">
+                    <img src="images/photo2_small.jpg" alt="Foto2" onclick="openImage('images/photo2_large.jpg')">
+                    <img src="images/photo3_small.bmp" alt="Foto3" onclick="openImage('images/photo3_large.bmp')">
+                    <img src="images/photo4_small.gif" alt="Foto4" onclick="openImage('images/photo4_large.gif')">
+                </div>
+            </div>
+
+            <div class="student-card">
+                <h3>Student 2: Ana Kovač</h3>
+                <img src="images/ana_small.jpg" alt="Ana Kovač" onclick="openImage('images/ana_large.jpg')">
+                <p>Datum rođenja: <a href="https://hr.wikipedia.org/wiki/1999" target="_blank">15.03.1999</a></p>
+                <p>Mjesto rođenja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></p>
+                <p>Mjesto stanovanja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></p>
+                <p>Spol: Ženski</p>
+                <p>Hobi: <a href="https://hr.wikipedia.org/wiki/Fotografija" target="_blank">Fotografija</a></p>
+
+                <h4>Obrazovanje:</h4>
+                <ul>
+                    <li><a href="https://hr.wikipedia.org/wiki/Osnovna_škola" target="_blank">Osnovna škola</a></li>
+                    <li><a href="https://hr.wikipedia.org/wiki/Srednja_škola" target="_blank">Srednja škola</a></li>
+                    <li><a href="https://www.unios.hr/" target="_blank">Fakultet</a></li>
+                </ul>
+
+                <h4>Radno iskustvo:</h4>
+                <ul>
+                    <li>Praksa u dizajn studiju ABC</li>
+                </ul>
+
+                <h4>Vještine:</h4>
+                <ul>
+                    <li>Grafički dizajn: Photoshop, Illustrator</li>
+                    <li>Web dizajn: HTML, CSS, JavaScript</li>
+                    <li>Ostalo: komunikacija, timski rad</li>
+                </ul>
+
+                <h4>Multimedija:</h4>
+                <audio controls>
+                    <source src="audio/ana_intro.mp3" type="audio/mpeg">
+                    Vaš preglednik ne podržava audio element.
+                </audio>
+                <video width="320" height="240" controls>
+                    <source src="video/ana_video.mp4" type="video/mp4">
+                    Vaš preglednik ne podržava video element.
+                </video>
+
+                <h4>Galerija:</h4>
+                <div class="gallery">
+                    <img src="images/photo5_small.png" alt="Foto5" onclick="openImage('images/photo5_large.png')">
+                    <img src="images/photo6_small.jpg" alt="Foto6" onclick="openImage('images/photo6_large.jpg')">
+                    <img src="images/photo7_small.tif" alt="Foto7" onclick="openImage('images/photo7_large.tif')">
+                    <img src="images/photo8_small.gif" alt="Foto8" onclick="openImage('images/photo8_large.gif')">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web stranica izrađena u sklopu kolegija <a href="https://www.unios.hr/studiji/kolegiji/multimedijska-tehnika" target="_blank">Multimedijska tehnika</a>, Fakultet elektrotehnike, računarstva i informacijskih tehnologija Osijek.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
