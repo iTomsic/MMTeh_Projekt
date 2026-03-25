@@ -10,73 +10,58 @@
 
 <div id="header"></div>
 
-
-
 <main>
-    <!-- Student 1 -->
-    <section class="student-section left">
-        <div class="student-content">
-            <img src="slika1.jpg" class="student-img" onclick="zoomImage(this)">
-            <h2>Ime Prezime 1</h2>
-            <p>Datum rođenja: 01.01.2000</p>
-            <p>Mjesto rođenja: Osijek</p>
-            <button onclick="location.href='student1.html'">Pročitaj više</button>
-            
-        </div>
-    </section>
+    <div class="students-grid">
 
-    
-
-    <!-- Student 2 -->
-    <section class="student-section right">
-        <div class="student-content">
-            <img src="slika2.jpg" class="student-img" onclick="zoomImage(this)">
-            <h2>Ime Prezime 2</h2>
-            <p>Datum rođenja: 02.02.2000</p>
-            <p>Mjesto rođenja: Osijek</p>
-            <button onclick="location.href='student2.html'">Pročitaj više</button>
+        <!-- Student 1 -->
+        <div class="student-card">
+            <div class="card-img-wrap" onclick="zoomImage(this.querySelector('img'))">
+                <img src="slika1.jpg" alt="Student 1">
+            </div>
+            <div class="card-body">
+                <h2>Ime Prezime 1</h2>
+                <p>Datum rođenja: 01.01.2000</p>
+                <p>Mjesto rođenja: Osijek</p>
+                <div class="btn">
+                    <a href="student1.html" class="">Pročitaj više</a>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <!-- Student 2 -->
+        <div class="student-card">
+            <div class="card-img-wrap" onclick="zoomImage(this.querySelector('img'))">
+                <img src="slika2.jpg" alt="Student 2">
+            </div>
+            <div class="card-body">
+                <h2>Ime Prezime 2</h2>
+                <p>Datum rođenja: 02.02.2000</p>
+                <p>Mjesto rođenja: Osijek</p>
+                <div class="btn">
+                    <a href="student2.html" class="">Pročitaj više</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </main>
 
 <footer>
     <p>Izrađeno u sklopu kolegija Multimedijska tehnika</p>
-    <br>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
-    <br>
-    <br>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
-    <br>
-    <br>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
-    <br>
-    <br>
-    <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
+    <div class="footer-links">
+        <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
+        <a href="student1.html">Student 1</a>
+        <a href="student2.html">Student 2</a>
+    </div>
 </footer>
 
-<!-- Zoom -->
+<!-- Image zoom modal -->
 <div id="modal" class="modal" onclick="closeModal()">
-    <img class="modal-content" id="zoomedImg">
+    <button class="modal-close" onclick="closeModal()" aria-label="Zatvori">&times;</button>
+    <img class="modal-content" id="zoomedImg" alt="Uvećana slika">
 </div>
 
-<script>
-function zoomImage(img) {
-    document.getElementById("zoomedImg").src = img.src.replace('-small','-large');
-    document.getElementById("modal").style.display = "block";
-}
-function closeModal() {
-    document.getElementById("modal").style.display = "none";
-}
-</script>
-<script>
-fetch("header.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("header").innerHTML = data;
-    });
-</script>
+<script src="scripts.js"></script>
 
 </body>
 </html>

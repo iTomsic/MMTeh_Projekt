@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 2 – Ime Prezime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<main class="student-page">
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="student2-small.jpg" class="main-img" onclick="zoomImage(this)" alt="Student 2">
+        <h1>Ime Prezime 2</h1>
+    </section>
+
+    <!-- Opće informacije -->
+    <section class="section">
+        <h2>Opće informacije</h2>
+        <p>Datum rođenja: <a href="https://hr.wikipedia.org/wiki/2000." target="_blank">02.02.2000</a></p>
+        <p>Mjesto rođenja: <a href="https://hr.wikipedia.org/wiki/Osijek" target="_blank">Osijek</a></p>
+        <p>Mjesto stanovanja: <a href="https://hr.wikipedia.org/wiki/Zagreb" target="_blank">Zagreb</a></p>
+        <p>Spol: <a href="https://hr.wikipedia.org/wiki/Muškarac" target="_blank">Muški</a></p>
+        <p>Hobi: <a href="https://hr.wikipedia.org/wiki/Programiranje" target="_blank">Programiranje</a></p>
+    </section>
+
+    <!-- Obrazovanje -->
+    <section class="section">
+        <h2>Obrazovanje</h2>
+        <ul>
+            <li><a href="https://www.osnovnaskola.hr/" target="_blank">Osnovna škola</a></li>
+            <li><a href="https://www.etfos.unios.hr/" target="_blank">Srednja škola</a></li>
+            <li><a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a></li>
+        </ul>
+    </section>
+
+    <!-- Radno iskustvo -->
+    <section class="section">
+        <h2>Radno iskustvo</h2>
+        <p>Studentski poslovi u IT sektoru, rad na web aplikacijama i održavanje sustava.</p>
+    </section>
+
+    <!-- Vještine -->
+    <section class="section">
+        <h2>Vještine</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>C#, Java</li>
+            <li>Rad s bazama podataka</li>
+        </ul>
+    </section>
+
+    <!-- Galerija -->
+    <section class="section">
+        <h2>Galerija</h2>
+        <div class="gallery">
+            <img src="slika1.jpg" onclick="zoomImage(this)" alt="Slika 1">
+            <img src="slika2.png" onclick="zoomImage(this)" alt="Slika 2">
+            <img src="slika3.gif" onclick="zoomImage(this)" alt="Slika 3">
+            <img src="slika4.bmp" onclick="zoomImage(this)" alt="Slika 4">
+        </div>
+    </section>
+
+    <!-- Audio -->
+    <section class="section">
+        <h2>Audio predstavljanje</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Vaš preglednik ne podržava audio element.
+        </audio>
+    </section>
+
+    <!-- Video -->
+    <section class="section">
+        <h2>Video</h2>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Vaš preglednik ne podržava video element.
+        </video>
+    </section>
+
+    <!-- Kolege -->
+    <section class="section">
+        <h2>Kolege</h2>
+        <ul>
+            <li><a href="https://kolega1.com" target="_blank">Kolega 1</a></li>
+            <li><a href="https://kolega2.com" target="_blank">Kolega 2</a></li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>Izrađeno tijekom studija na FERIT Osijek</p>
+    <div class="footer-links">
+        <a href="https://www.ferit.unios.hr/" target="_blank">FERIT Osijek</a>
+        <a href="index.html">Početna</a>
+    </div>
+</footer>
+
+<!-- Image zoom modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <button class="modal-close" onclick="closeModal()" aria-label="Zatvori">&times;</button>
+    <img class="modal-content" id="zoomedImg" alt="Uvećana slika">
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
